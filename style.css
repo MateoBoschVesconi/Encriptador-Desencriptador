@@ -1,0 +1,183 @@
+
+
+:root {
+    --color-primario: #E0A458;
+    --color-secundario: #2EBFA5;
+    --color-terciario: #9F84BD;
+    --cuarto-color: #0A3871;
+}
+
+
+*{
+    background-color: var(--color-primario);
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+.logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 6%;
+}
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+}
+.text-area {
+    border: none;
+    color: var(--cuarto-color);
+    margin-top: 90px;
+    text-transform: lowercase;
+
+}
+::placeholder {
+    color: var(--color-secundario);
+}
+.text-area:focus {
+    outline: none;
+}
+
+
+.mensaje {
+    background: rgb(255, 255, 255);
+    background-image: url(/Assets/Muñeco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-top: 60px;
+    position: absolute;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.bn-desencriptar {
+    background-color: var(--color-terciario);
+    border: 1px solid var(--cuarto-color);
+    border-radius: 24px;
+    color: var(--cuarto-color);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+
+}
+
+.bn-encriptar {
+    color: var(--color-primario);
+    background-color: var(--cuarto-color);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar {
+    border: 1px solid var(--color-terciario);
+    border-radius: 24px;
+    color: var(--cuarto-color);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 200px;
+    margin-top: 570px;
+    position: relative;
+    width: 336px;
+}
+
+.informacion {
+    color: gray;
+    font-size: 18px;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 0px;
+    color: var(--cuarto-color);
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .caja-ingresar {
+        margin-top: 20px; /* Asegura un espacio entre los textareas */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        align-items: center;
+    }
+    .text-area{
+        margin-top: 20px; /* Asegura un espacio entre los textareas */
+        width: 100%;
+        max-width: 100%;
+        margin: 20px;
+    }
+    .informacion {
+        justify-content: center;
+        width: 100%;
+    }
+    .botones {
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .caja-resultado {
+        margin-top: 20px; /* Asegura un espacio entre los textareas */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        align-items: center;
+    }
+    .mensaje {
+        background-image: none; /* Eliminar la imagen de fondo */
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: 19px; /* Espacio superior */
+        width: 688px;
+        height: 343px; /* Asegura que ocupe todo el ancho disponible */ 
+        box-sizing: border-box;
+        padding-left: 16px;
+        padding-top: 23px;
+
+    }
+    .copiar{
+        width: 100%; 
+        max-width: none; 
+        align-self: center;
+        margin-left: auto;
+        margin-top: 360px;
+    }
+    .logo{
+        width: auto;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .logo{
+        padding-left: 0px;
+
+    }
+    .mensaje {
+        width: 90%;
+    }
+
+}
