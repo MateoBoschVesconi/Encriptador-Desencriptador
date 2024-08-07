@@ -102,7 +102,7 @@ main {
 }
 
 .informacion {
-    color: gray;
+    color: var(--cuarto-color);
     font-size: 18px;
 }
 
