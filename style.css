@@ -181,3 +181,32 @@ main {
     }
 
 }
+
+@media (max-width: 480px) {
+    .mensaje {
+        display: flex;
+        width: 90%;
+
+    }
+
+}
+@media (min-width: 1140px) {
+    .mensaje {
+        display: flex;
+        width: 90%;
+
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .mensaje {
+        display: flex;
+        width: 27%;
+        padding-left: 3%;
+    }
+    .copiar{
+        margin-left: 145px;
+    }
+}
+
